@@ -26,3 +26,33 @@ Kardiyoloji uzmanı veya EKG inceleyen sağlık çalışanı.
 - Veritabanı: PostgreSQL
 - Dağıtım: Docker
 
+## Proje yapısı
+
+- `frontend/`: Kullanıcı arayüzü; ileride React ve Next.js ile geliştirilecek.
+- `backend/`: Uygulamanın API ve sunucu tarafı; ileride Python ve FastAPI ile geliştirilecek.
+- `model/`: EKG veri işleme ve yapay zekâ modeli; araştırma verileri ile geliştirilecek.
+
+Bu klasörler başlangıç hazırlığıdır; henüz uygulama veya eğitilmiş model içermez.
+
+## Geliştirme araçlarını kontrol etme
+
+PowerShell üzerinde aşağıdaki komutlar sürüm bilgisi göstermelidir:
+
+```powershell
+python --version
+python -m pip --version
+node --version
+npm.cmd --version
+git --version
+docker --version
+```
+
+Python ve paketlerini projeye özel bir sanal ortamda kullanmak için proje klasöründe:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip --version
+```
+
+Sanal ortam `.gitignore` kapsamındadır ve GitHub'a yüklenmez.
+
