@@ -12,6 +12,7 @@ node_modules/
 data/
 models/
 *.log
+work/
 
 # Editor files
 .vscode/
